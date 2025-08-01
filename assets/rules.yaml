@@ -1,0 +1,18 @@
+User:
+  Default:
+    - rule: "Email != ''"
+      enabled: true
+    - rule: "Age >= 18"
+      enabled: false
+  Create:
+    - rule: "IsActive == true"
+      enabled: true
+
+
+Order:
+  Default:
+    - rule: "Total > 0"
+      enabled: true
+  Delete:
+    - rule: "Status != 'SHIPPED'"
+      enabled: true
